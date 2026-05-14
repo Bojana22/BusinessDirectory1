@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_services"
+        android:title="@string/services"/>
+    <item
+        android:id="@+id/nav_fun"
+        android:title="@string/fun"/>
+    <item
+        android:id="@+id/nav_industry"
+        android:title="@string/industry"/>
+    <item
+        android:id="@+id/nav_education"
+        android:title="@string/education"/>
+</menu>

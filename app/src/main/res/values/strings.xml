@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LocalFinder</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_lat">Latitude</string>
+    <string name="hint_lon">Longitude</string>
+    <string name="hint_email">E-mail address</string>
+    <string name="hint_phone">Telephone</string>
+    <string name="hint_web">Web site</string>
+    <string name="label_category">Category</string>
+    <string name="label_icon_style">Choose Icon Style</string>
+
+    <string name="industry">Industry</string>
+    <string name="fun">Fun</string>
+    <string name="education">Education</string>
+    <string name="services">Services</string>
+
+    <string name="btn_save">SAVE</string>
+    <string name="toolbar_add_title">Add New Company</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- ДОДАДИ ГО ОВА ПОДОЛУ ЗА DETAILS ACTIVITY -->
+    <string name="details_phone">Тел: %1$s</string>
+    <string name="details_web">Web: %1$s</string>
+    <string name="details_email">Email: %1$s</string>
+    <string name="details_lat">Latitude: %1$.4f</string>
+    <string name="details_lon">Longitude: %1$.4f</string>
+
+</resources>
