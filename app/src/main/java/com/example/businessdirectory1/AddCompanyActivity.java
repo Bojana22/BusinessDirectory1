@@ -11,7 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-// КЛАСАТА МОРА ДА ПОЧНУВА ОВДЕ
 public class AddCompanyActivity extends AppCompatActivity {
 
     private EditText etName, etAddress, etLat, etLon, etEmail, etPhone, etWeb;
@@ -42,7 +41,7 @@ public class AddCompanyActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        // Иницијализација - имињата мора да се исти како во XML
+        // initialize views
         etName = findViewById(R.id.etName);
         etAddress = findViewById(R.id.etAddress);
         etLat = findViewById(R.id.etLatitude);
@@ -85,11 +84,25 @@ public class AddCompanyActivity extends AppCompatActivity {
             return;
         }
 
-        String category = "";
-        if (cbServices.isChecked()) category = "Services";
-        else if (cbFun.isChecked()) category = "Fun";
-        else if (cbIndustry.isChecked()) category = "Industry";
-        else if (cbEducation.isChecked()) category = "Education";
+        StringBuilder categoryBuilder = new StringBuilder();
+
+        if (cbServices.isChecked()) {
+            categoryBuilder.append("Services,");
+        }
+
+        if (cbFun.isChecked()) {
+            categoryBuilder.append("Fun,");
+        }
+
+        if (cbIndustry.isChecked()) {
+            categoryBuilder.append("Industry,");
+        }
+
+        if (cbEducation.isChecked()) {
+            categoryBuilder.append("Education,");
+        }
+
+        String category = categoryBuilder.toString();
 
         if (name.isEmpty() || category.isEmpty()) {
             Toast.makeText(this, "Пополнете име и категорија!", Toast.LENGTH_SHORT).show();
